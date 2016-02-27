@@ -1,7 +1,30 @@
-
 body {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	color: #3F0000;
+	font-family: 'Overpass';
+	font-size: 16px;
+	background-image: url("../images/background.png");
+}
+
+.nav li {
+	font-size: 16px;
+}
+
+.navbar {
+	margin-bottom: 0;
+	min-height: 60px;
+	border: 0;
+}
+
+.navbar-nav li a {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.navbar-nav li a:hover,  .navbar-nav li a:focus {
+	background: none;
+	color: #424251;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -10,7 +33,6 @@ body {
 /* Carousel base class */
 .carousel {
   height: 300px;
-  margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -28,4 +50,68 @@ body {
   left: 0;
   min-width: 100%;
   height: 500px;
+}
+
+a {
+	color: #3F0000;
+}
+
+h1 {
+	background-color: #3F0000;
+	font-size: 22px;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding: 10px 10px 5px 50px;
+	margin-top: 0;
+	margin-bottom: 30px;
+	box-shadow: 0px 10px 10px #3F0000;
+}
+
+.content {
+	margin: 50px;
+}
+
+.service-icons {
+	text-align: center;	
+}
+
+.service-icons img {
+	padding: 10px 30px 10px 30px;
+}
+
+.prices {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.contact h1 {
+	background: none;
+	font-size: 22px;
+	color: #3F0000;
+	padding: 0px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	box-shadow: none;
+}
+
+.contact img {
+	padding: 10px;
+}
+
+.signature {
+	font-style:italic;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 40%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
