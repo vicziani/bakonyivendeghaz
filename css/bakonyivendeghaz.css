@@ -15,16 +15,18 @@ body {
 	border: 0;
 }
 
+
 .navbar-nav li a {
-	padding-top: 18px;
-	padding-bottom: 18px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	font-size: 18px;
 	font-weight: 100;
+	min-height:60px;
 }
 
 .navbar-nav li a:hover,  .navbar-nav li a:focus {
-	background: none;
-	color: #424251;
+	background-color: #424251;
+	color: #ffffff;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -54,6 +56,11 @@ body {
 
 a {
 	color: #3F0000;
+}
+
+a:hover, a:focus {
+	color: #424251;
+	text-decoration: none;
 }
 
 h1 {
