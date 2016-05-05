@@ -30,31 +30,6 @@ body {
 	color: #ffffff;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 300px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 300px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-
 a {
 	color: #3F0000;
 }
@@ -78,6 +53,12 @@ h1 {
 .content {
 	margin: 50px;
 }
+@media (max-width: 980px) {
+    .content {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
 
 .service-icons {
 	text-align: center;	
@@ -92,7 +73,12 @@ h1 {
 	font-weight: bold;
 }
 
-.contact h1 {
+.content .contact {
+    margin-top: 20px;
+}
+
+.contact h2 {
+    font-weight: bold;
 	background: none;
 	font-size: 22px;
 	color: #3F0000;
@@ -108,6 +94,7 @@ h1 {
 
 .signature {
 	font-style:italic;
+	margin-top: 10px;
 }
 
 .google-maps {
