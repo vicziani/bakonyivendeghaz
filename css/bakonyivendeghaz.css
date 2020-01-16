@@ -5,33 +5,70 @@ body {
 	background-image: url("../images/background.png");
 }
 
-.nav li {
-	font-size: 16px;
+.contact-header {
+	background: white;
+	text-align: right;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.contact-header div {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+@media (min-width: 980px) {
+	.contact-header div {
+		display: inline;
+	}
 }
 
 .navbar {
-	margin-bottom: 0;
-	min-height: 60px;
-	border: 0;
+	padding: 0;
+	background: white;
 }
 
+.navbar-brand {
+	padding: 0;
+}
 
-.navbar-default .navbar-nav li a {
-	padding-top: 20px;
-	padding-bottom: 20px;
+.navbar-nav .nav-link {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
 	font-size: 18px;
 	font-weight: 100;
-	min-height:60px;
+  text-decoration: none;
 	color: #3F0000;
+	line-height: 60px;
 }
 
-.navbar-default .navbar-nav li a:hover, .navbar-nav li a:focus {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
 	background-color: #424251;
 	color: #ffffff;
+	display: block;
+}
+
+
+.nav-link {
+	display: inline-block;
+	height: 100%;
+	padding: 0;
+}
+
+.carousel {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 a {
 	color: #3F0000;
+	text-decoration: underline;
 }
 
 a:hover, a:focus {
@@ -53,19 +90,12 @@ h1 {
 .content {
 	margin: 50px;
 }
+
 @media (max-width: 980px) {
-    .content {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  }
-
-.service-icons {
-	text-align: center;	
-}
-
-.service-icons img {
-	padding: 10px 30px 10px 30px;
+	.content {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
 }
 
 .prices {
@@ -74,11 +104,11 @@ h1 {
 }
 
 .content .contact {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .contact h2 {
-    font-weight: bold;
+	font-weight: bold;
 	background: none;
 	font-size: 22px;
 	color: #3F0000;
@@ -88,8 +118,14 @@ h1 {
 	box-shadow: none;
 }
 
-.contact img {
+.contact i {
 	padding: 10px;
+	font-size: 30px;
+}
+
+.contact span {
+	display: flex;
+	align-items: center;
 }
 
 .signature {
@@ -98,15 +134,18 @@ h1 {
 }
 
 .google-maps {
-    position: relative;
-    padding-bottom: 40%; // This is the aspect ratio
-    height: 0;
-    overflow: hidden;
+	position: relative;
+	padding-bottom: 40%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
 }
+
 .google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+	border: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	padding-bottom: 30px;
 }
