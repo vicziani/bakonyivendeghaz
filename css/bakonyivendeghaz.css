@@ -61,6 +61,10 @@ body {
 	padding: 0;
 }
 
+.navbar-toggler {
+	margin: 10px;
+}
+
 .carousel {
 	padding-top: 0px;
 	padding-bottom: 0px;
